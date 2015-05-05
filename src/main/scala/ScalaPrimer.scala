@@ -26,6 +26,10 @@ object ScalaPrimer {
       x*x
     }
 
+    val nums = List(1, 2, 3, 4, 5)
+    val numSquares = nums.map(squareFunc) //functions map input values to output and do not change data in place
+    println(numSquares)
+
     //3. Implicit Conversions
     val a: Int = 1; val b: Int = 4
     val myRange: Range = a to b
@@ -38,13 +42,12 @@ object ScalaPrimer {
     //no pattern matching
     pairs.filter(s => s._2 != 2)
 
-    //case does pattern matching over tuple
+    //case performs pattern matching over tuple
     pairs.filter{ case(x, y) => y != 2 }
 
-    /*
-    5. Higher-order functions
-    filter, map, flatMap, reduce etc. are higher order functions as they accept other functions as parameters.
-     */
+    //5. Higher-order functions
+    //filter, map, flatMap, reduce etc. are higher-order functions as they accept other functions as parameters.
+
 
   }
 
