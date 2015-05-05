@@ -1,5 +1,6 @@
 /**
  * Created by snudurupati on 5/1/15.
+ * A an analysis of populations by counties to demonstrate joins between pair RDDs.
  */
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.{SparkConf, SparkContext}
@@ -41,6 +42,8 @@ object CensusAnalyzer {
     //6. Show the top 10 counties by population
     val topCounties = censusRDD.map(r => (r.population, r.county)).top(10)
     topCounties.foreach(println)
+
+    sc.stop()
 
   }
 }

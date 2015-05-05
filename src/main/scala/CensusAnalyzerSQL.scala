@@ -1,5 +1,6 @@
 /**
  * Created by snudurupati on 5/1/15.
+ * A an analysis of populations by counties using SparkSQL.
  */
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.{SparkConf, SparkContext}
@@ -44,6 +45,8 @@ object CensusAnalyzerSQL {
      //6. Show the top 10 counties by population
      val top10Counties = sqlContext.sql("select county, population from census order by population desc limit 10").collect
      top10Counties.foreach(println)
+
+     sc.stop()
 
    }
  }

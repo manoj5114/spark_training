@@ -29,6 +29,8 @@ object DistributedSort {
     //Print just the values of the sorted RDD
     sortedRDD.collect.foreach{case(k, v) => println(v)}
 
+    sc.stop()
+
   }
 
 }
