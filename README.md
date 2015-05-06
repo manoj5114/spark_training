@@ -17,7 +17,7 @@ Provided are the following self-contained Spark apps written in Scala
 * TwitterStudy.scala
 
 
-These examples have been created to run against Spark 1.2 and may also be run against 1.1
+These examples have been created to run against Spark 1.2.
 
 Code provided is entirely in Scala wih some bits in SparkSQL.
 
