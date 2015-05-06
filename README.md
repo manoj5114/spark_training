@@ -30,12 +30,15 @@ Requirements
 * spark-sql 1.2.0
 * SBT 0.13.8
 
-Spark Submit
+Compiling and Running
 ===
+Download the code and unpack to spark_training folder.
 
-You can also create a jar with all of the dependencies for running scala versions of the code and run the job with the spark-submit script
+Create a jar with all of the dependencies for running scala versions of the code and run the job with the spark-submit script.
 * To compile the code to a jar
+
   cd spark_training
+
   ./sbt/sbt package
 
 * To run each app individually, from the spark_training folder specifiy each programm class name indivudually, like:
