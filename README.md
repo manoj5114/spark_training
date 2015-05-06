@@ -41,7 +41,7 @@ Create a jar with all of the dependencies for running scala versions of the code
 
   ./sbt/sbt package
 
-* To run each app individually, from the spark_training folder specifiy each programm class name indivudually, like:
+* To run each app individually, from the spark_training folder specifiy each app's class name individually, as follows:
 
 $SPARK_HOME/bin/spark-submit --class CensusAnalyzer --master local target/scala-2.10/spark_training_2.10-0.1.jar
 
