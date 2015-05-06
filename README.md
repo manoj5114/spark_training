@@ -33,7 +33,7 @@ Requirements
 Spark Submit
 ===
 
-You can also create an jar with all of the dependencies for running scala versions of the code and run the job with the spark-submit script
+You can also create n jar with all of the dependencies for running scala versions of the code and run the job with the spark-submit script
 * To compile the code to a jar
   cd spark_training
   ./sbt/sbt package
