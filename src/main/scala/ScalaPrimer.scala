@@ -22,7 +22,7 @@ object ScalaPrimer {
     lines.filter(_.contains("mysql"))
 
     //2. Type Inference
-    def squareFunc(x: Int) = {      //function return type is inferred based on return value.
+    def squareFunc(x: Int) = {      //function return type is inferred based on the type of return value.
       x*x
     }
 
