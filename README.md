@@ -1,4 +1,4 @@
-Examples for "Intro to Apache Spark" training
+Spark Examples and Exercises
 ===============
 The examples cover the core concepts of Apache Spark
 * Spark Core
